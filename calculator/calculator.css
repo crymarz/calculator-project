@@ -74,3 +74,8 @@ button {
 #result {
     font-size: 45px;
 }
+
+.multicolortext {
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    font-size: 30px;
+}
