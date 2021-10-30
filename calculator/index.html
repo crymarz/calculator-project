@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculator</title>
-        <script type="text/javascript" src="controller.js"></script>
-        <script type="text/javascript" src="calculator.js"></script>
-        <link rel="stylesheet" type="text/css" href="calculator.css" />
-    </head>
-    <body>
-        <!-- Fill in html here -->
-    </body>
+
+<head>
+    <title>Calculator</title>
+    <script type="text/javascript" src="controller.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="calculator.css" />
+</head>
+
+<body>
+    <div class="center">
+        <div class="numberInput1">
+            <form>
+                <label id="label1" for="inputNumberOne">First Number</label>
+                <input id="inputNumberOne" type="number" autofocus class="numbers" />
+            </form>
+        </div>
+        <div class="numberInput2">
+            <label id="label2" for="inputNumberTwo">Second Number</label>
+            <input id="inputNumberTwo" type="number" autofocus class="numbers" />
+        </div>
+        <div class="operators">
+            <input id="add" type="radio" name="operation" value="add" class="operators" />
+            <label for="add">Add</label>
+            <input id="subtract" type="radio" name="operation" value="subtract" class="operators" />
+            <label for="subtract">Subtract</label>
+            <input id="multiply" type="radio" name="operation" value="multiply" class="operators" />
+            <label for="multiply">Multiply</label>
+            <input id="divide" type="radio" name="operation" value="divide" class="operators" />
+            <label for="divide">Divide</label>
+        </div>
+        <div class="buttons">
+            <button id="Calcbtn" onclick="calculate()" class="calc">=</button>
+            <button id="Clearbtn" onclick="clearValues()" class="clear">Clear</button>
+        </div>
+        <div class="section">
+            <label id="result"></label>
+        </div>
+    </div>
+</body>
+
 </html>
